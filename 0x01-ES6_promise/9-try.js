@@ -3,9 +3,9 @@ export default function guardrail(mathFunction) {
   try {
     queue.push(mathFunction());
   } catch (error) {
-    queue.push("Error: cannot divide by 0");
+    queue.push('Error: cannot divide by 0');
   } finally {
-    queue.push("Guardrail was processed");
+    queue.push('Guardrail was processed');
   }
   return queue;
 }
