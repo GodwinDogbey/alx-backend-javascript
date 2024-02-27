@@ -1,17 +1,15 @@
-const welcome = 'Welcome to Holberton School, what is your name?';
-const response = 'Your name is: ';
-const endNote = 'This important software is now closing';
+const msg = 'Welcome to Holberton School, what is your name?';
+const res = 'Your name is: ';
+const ext = 'This important software is now closing';
 
-process.stdout.write(`${welcome}\n`);
+process.stdout.write(`${msg}\n`);
 process.stdin.on('readable', () => {
-  const name = process.stdin.read();
-  if (name) {
-    process.stdout.write(response + name);
+  const ch = process.stdin.read();
+  if (ch) {
+    process.stdout.write(res + ch);
   }
 });
 
 process.stdin.on('end', () => {
-  // eslint-disable-next-line camelcase
-  process.stdout.write(`${endNote} \n`);
+  process.stdout.write(`${ext}\n`);
 });
-
