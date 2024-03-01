@@ -1,0 +1,28 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "Unitest in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/GodwinDogbey/alx-backend-javascript.git"
+  },
+  "author": "GodwinDogbey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GodwinDogbey/alx-backend-javascript/issues"
+  },
+  "homepage": "https://github.com/GodwinDogbey/alx-backend-javascript#readme",
+  "devDependencies": {
+    "assert": "^2.1.0",
+    "chai": "^4.3.4",
+    "mocha": "^10.3.0"
+  },
+  "dependencies": {
+    "sinon": "^17.0.1"
+  }
+}
+
